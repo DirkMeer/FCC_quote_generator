@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/FCC_quote_generator/static/css/main.26d0c32e.css",
+    "main.js": "/FCC_quote_generator/static/js/main.2bd7388d.js",
+    "index.html": "/FCC_quote_generator/index.html",
+    "main.26d0c32e.css.map": "/FCC_quote_generator/static/css/main.26d0c32e.css.map",
+    "main.2bd7388d.js.map": "/FCC_quote_generator/static/js/main.2bd7388d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26d0c32e.css",
+    "static/js/main.2bd7388d.js"
+  ]
+}
