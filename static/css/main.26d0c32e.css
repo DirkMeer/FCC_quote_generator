@@ -1,2 +1,149 @@
-:root{--primary:#000759;--secondary:#0067c2;--dark:#131a26;--light:#eee;--grey:#888;--font:"Fira Sans",sans-serif;--font-quote:"Fira Code",monospace}*{box-sizing:border-box;font-family:Fira Sans,sans-serif;font-family:var(--font);margin:0;padding:0}body{background-color:#eee;background-color:var(--light)}.App{align-items:center;display:flex;flex-direction:column;justify-content:center;min-height:100vh}.Quote{position:relative}.author{background-color:#000759;background-color:var(--primary);border:2px solid #888;border:2px solid var(--grey);border-radius:.5rem;bottom:0;color:#eee;color:var(--light);display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:1px;max-width:30vw;overflow:hidden;padding:.75rem 1.5rem;right:0;text-overflow:ellipsis;-webkit-transform:translate(70px,-50%);transform:translate(70px,-50%);white-space:nowrap}blockquote{background-color:#131a26;background-color:var(--dark);border:2px solid #888;border:2px solid var(--grey);border-radius:1rem;color:#fff;font-family:Fira Code,monospace;font-family:var(--font-quote);font-size:1.3rem;max-width:50vw;padding:3rem;position:relative}button{-webkit-appearance:none;appearance:none;background-color:#000759;background-color:var(--primary);border:2px solid #888;border:2px solid var(--grey);border-radius:.5rem;color:#fff;cursor:pointer;font-size:1.2rem;font-weight:600;left:50%;margin-bottom:64px;margin-top:64px;outline:none;padding:.75rem 1.5rem;position:absolute;-webkit-transform:translate(-50%,-100%);transform:translate(-50%,-100%);transition:.4s}#quote-box{position:relative}button:hover{background-color:#0067c2;background-color:var(--secondary);-webkit-transform:translate(-50%,-100%) scale(110%);transform:translate(-50%,-100%) scale(110%)}.twitter{align-items:center;background-color:#000759;background-color:var(--primary);border:2px solid #888;border:2px solid var(--grey);border-radius:.5rem;bottom:0;display:flex;flex-direction:column;font-size:1.2rem;height:2.5rem;justify-content:center;padding-top:5px;position:absolute;-webkit-transform:translate(50%,-70%);transform:translate(50%,-70%);width:2.5rem}
+:root {
+    --primary: #000759;
+    --secondary: #0067c2;
+    --dark: #131a26;
+    --light: #eee;
+    --grey: #888;
+    --font: "Fira Sans", sans-serif;
+    --font-quote: "Fira Code", monospace;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Fira Sans, sans-serif;
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eee;
+    background-color: var(--light);
+}
+
+.App {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.quote {
+    position: relative;
+}
+
+
+.author {
+    background-color: #000759;
+    background-color: var(--primary);
+    border: 2px solid #888;
+    border: 2px solid var(--grey);
+    border-radius: .5rem;
+    bottom: 0;
+    color: #eee;
+    color: var(--light);
+    display: inline-block;
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    max-width: 30vw;
+    overflow: hidden;
+    padding: .75rem 1.5rem;
+    right: 0;
+    text-overflow: ellipsis;
+    -webkit-transform: translate(70px, -50%);
+    transform: translate(70px, -50%);
+    white-space: nowrap;
+}
+
+blockquote {
+    background-color: #131a26;
+    background-color: var(--dark);
+    border: 2px solid #888;
+    border: 2px solid var(--grey);
+    border-radius: 1rem;
+    color: #fff;
+    font-family: Fira Code, monospace;
+    font-family: var(--font-quote);
+    font-size: 1.3rem;
+    max-width: 50vw;
+    padding: 3rem;
+    position: relative;
+}
+
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #000759;
+    background-color: var(--primary);
+    border: 2px solid #888;
+    border: 2px solid var(--grey);
+    border-radius: .5rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    left: 50%;
+    margin-bottom: 64px;
+    margin-top: 64px;
+    outline: none;
+    padding: .75rem 1.5rem;
+    position: absolute;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+    transition: .4s;
+}
+
+#quote-box {
+    position: relative;
+}
+
+button:hover {
+    background-color: #0067c2;
+    background-color: var(--secondary);
+    -webkit-transform: translate(-50%, -100%) scale(110%);
+    transform: translate(-50%, -100%) scale(110%);
+}
+
+.twitter {
+    align-items: center;
+    background-color: #000759;
+    background-color: var(--primary);
+    border: 2px solid #888;
+    border: 2px solid var(--grey);
+    border-radius: .5rem;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    justify-content: center;
+    padding-top: 5px;
+    position: absolute;
+    -webkit-transform: translate(50%, -70%);
+    transform: translate(50%, -70%);
+    width: 2.5rem;
+}
+
+@media(max-width:750px) {
+    blockquote {
+        max-width: 65vw;
+        font-size: 1.15em;
+    }
+}
+
+@media(max-width:600px) {
+    blockquote {
+        max-width: 80vw;
+        font-size: 1em;
+    }
+}
+
+@media(min-width:1000px) {
+    blockquote {
+        max-width: 500px;
+    }
+}
+
 /*# sourceMappingURL=main.26d0c32e.css.map*/
