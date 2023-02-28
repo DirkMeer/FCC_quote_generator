@@ -130,6 +130,7 @@ button:hover {
     blockquote {
         max-width: 65vw;
         font-size: 1.15em;
+        padding: 2.6rem;
     }
 }
 
@@ -137,6 +138,7 @@ button:hover {
     blockquote {
         max-width: 80vw;
         font-size: 1em;
+        padding: 2.2rem;
     }
 }
 
